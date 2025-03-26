@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        app:icon="@drawable/ic_arrow_back"
+        app:iconGravity="start"
+        app:iconTint="@color/black"
+
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:text="@string/settings"
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Темная тема"
+        />
+
+    <Button
+        app:icon="@drawable/ic_share"
+        app:iconGravity="end"
+        app:iconTint="@color/black"
+
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/share"
+        />
+
+    <Button
+        app:icon="@drawable/ic_support"
+        app:iconGravity="end"
+        app:iconTint="@color/black"
+
+        android:id="@+id/support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/support"
+        />
+
+    <Button
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        app:iconTint="@color/black"
+
+        android:id="@+id/agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/agreement"
+        />
+
+</LinearLayout>
