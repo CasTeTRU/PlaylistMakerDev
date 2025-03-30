@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 btn_search.setOnClickListener {
             val searchIntent = Intent(this, SearchActivity::class.java)
             startActivity(searchIntent)
-        }
+}
 
         val btnLibraryClickListener: View.OnClickListener = object : View.OnClickListener {
             override fun onClick(v: View?) {
