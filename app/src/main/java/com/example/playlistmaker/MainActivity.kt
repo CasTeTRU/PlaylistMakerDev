@@ -30,6 +30,7 @@ btn_search.setOnClickListener {
                 startActivity(mediatekaIntent)
             }
         }
+
 btn_library.setOnClickListener(btnLibraryClickListener)
 
 
