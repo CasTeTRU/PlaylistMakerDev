@@ -1,60 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/background"
-    tools:context=".MainActivity"
-    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    android:background="@color/yp_blue"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        app:titleCentered="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        />
+
 
     <Button
         app:icon="@drawable/ic_search"
         app:iconGravity="textStart"
         app:iconTint="@color/surface"
-        app:cornerRadius="16dp"
+
 
         android:id="@+id/btnSearch"
+        android:layout_marginTop="24dp"
         android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/search"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:foreground="?attr/selectableItemBackground"
+
+        style="@style/MainButtonStyle"
         />
 
     <Button
         app:icon="@drawable/ic_library"
         app:iconGravity="textStart"
         app:iconTint="@color/surface"
-        app:cornerRadius="16dp"
+
 
         android:id="@+id/btnLibrary"
+        android:layout_marginTop="16dp"
         android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/library"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:foreground="?attr/selectableItemBackground"
+
+        style="@style/MainButtonStyle"
         />
 
     <Button
         app:icon="@drawable/ic_settings"
         app:iconGravity="textStart"
         app:iconTint="@color/surface"
-        app:cornerRadius="16dp"
+
 
         android:id="@+id/btnSettings"
+        android:layout_marginTop="16dp"
         android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/settings"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:foreground="?attr/selectableItemBackground"
+
+        style="@style/MainButtonStyle"
+        android:paddingBottom="28dp"
         />
 </LinearLayout>

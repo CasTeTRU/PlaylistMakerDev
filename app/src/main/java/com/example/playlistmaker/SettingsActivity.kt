@@ -1,18 +1,17 @@
 package com.example.playlistmaker
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
+import com.google.android.material.appbar.MaterialToolbar
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val btnBack = findViewById<Button>(R.id.btn_back)
+        val btnBack = findViewById<MaterialToolbar>(R.id.toolbar)
 
-        btnBack.setOnClickListener {
+        btnBack.setNavigationOnClickListener {
         finish()
         }
     }

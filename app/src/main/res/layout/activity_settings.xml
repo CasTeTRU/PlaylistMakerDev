@@ -7,89 +7,71 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/white"
-    tools:context=".MainActivity"
+    tools:context=".SettingsActivity"
     android:theme="@style/Base.Theme.MaterialComponents.DayNight.NoActionBar"
     >
 
-    <Button
-        app:icon="@drawable/ic_arrow_back"
-        app:iconGravity="start"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         app:iconTint="@color/black"
+        app:contentInsetStartWithNavigation="16dp"
+        app:navigationIconTint="@color/black"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/settings"
+        app:titleTextColor="@color/yp_black"
 
-        android:id="@+id/btn_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:gravity="start|center_vertical"
         android:textSize="22sp"
-        android:textAllCaps="false"
-        android:text="@string/settings"
         />
 
 
-
-
-    <androidx.appcompat.widget.SwitchCompat
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_day_night"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start|center_vertical"
-        android:textSize="16sp"
         android:text="@string/night_theme"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="20dp"
-        android:fontFamily="sans-serif-medium"
+        app:thumbTint="@color/switch_thumb_color"
+        app:trackTint="@color/switch_track_color"
+        style="@style/ButtonStyle"
     />
 
 
     <Button
         app:icon="@drawable/ic_share"
         app:iconGravity="end"
-        app:iconTint="@color/black"
+        app:iconTint="@color/icon_color"
 
         android:id="@+id/share"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:gravity="start|center_vertical"
-        android:textSize="16sp"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="20dp"
+        style="@style/ButtonStyle"
         android:text="@string/share"
         />
 
     <Button
         app:icon="@drawable/ic_support"
         app:iconGravity="end"
-        app:iconTint="@color/black"
+        app:iconTint="@color/icon_color"
 
         android:id="@+id/support"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:gravity="start|center_vertical"
-        android:textSize="16sp"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="20dp"
+        style="@style/ButtonStyle"
         android:text="@string/support"
         />
 
     <Button
         app:icon="@drawable/ic_arrow_forward"
         app:iconGravity="end"
-        app:iconTint="@color/black"
+        app:iconTint="@color/icon_color"
 
         android:id="@+id/agreement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:gravity="start|center_vertical"
-        android:textSize="16sp"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="20dp"
+        style="@style/ButtonStyle"
         android:text="@string/agreement"
         />
 
